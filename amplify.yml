@@ -18,11 +18,7 @@ test:
     files:
       - "**/*.png"
       - "**/*.mp4"
-  phases:
-    preTest:
-      commands:
-        - npm run verify
-       
+  phases:    
     test:
       commands:
         - npm test --record
