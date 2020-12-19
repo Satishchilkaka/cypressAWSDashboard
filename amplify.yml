@@ -1,9 +1,6 @@
 nversion: 0.1
 frontend:
   phases:
-    preBuild:
-      commands:
-        - npm install
     build:
       commands:
         - npm run build
@@ -27,7 +24,8 @@ test:
         - npm install
         - npm install wait-on
         - npm install mocha mochawesome mochawesome-merge mochawesome-report-generator
-        - "npm start & npx wait-on http://127.0.0.1:8080"
+        - npm pretest
+       
     test:
       commands:
         - 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
