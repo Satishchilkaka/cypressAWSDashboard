@@ -6,7 +6,7 @@
   "scripts": {
     "build": "yarn install",
     "cy:verify": "yarn cypress verify",
-    "test": "yarn cypress run --spec 'cypress/integration/examples/actions.spec.js' --reporter mochawesome"
+    "test": "yarn cypress run --spec 'cypress/integration/examples/actions.spec.js'  --reporter mochawesome"
   },
   "dependencies": {
     "cypress": "^6.1.0",
