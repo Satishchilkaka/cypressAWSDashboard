@@ -21,7 +21,7 @@ test:
   phases:
     preTest:
       commands:
-        - npm run cy:verify
+        - npm run verify
        
     test:
       commands:
