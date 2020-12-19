@@ -5,7 +5,7 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: app
+    baseDirectory: ./frontend/build
     files:
       - "**/*"
   cache:
