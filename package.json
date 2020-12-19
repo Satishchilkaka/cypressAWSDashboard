@@ -1,12 +1,13 @@
 {
+  "projectId": "x1mx3p",
 
   "scripts": {
     "build": "yarn add cypress",
     "pretest": "yarn install",
     
-    "test": "yarn cypress run"
+    "test": "yarn cypress run --record --key 5c8b5aab-9066-4300-95c8-6ab85bab7096 --spec 'cypress/integration/examples/actions.spec.js'"
   },
   "dependencies": {
     "cypress": "^6.1.0"
   }
-}
+} 
