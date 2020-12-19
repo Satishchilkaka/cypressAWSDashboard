@@ -1,4 +1,10 @@
 nversion: 0.1
+backend:
+  phases:
+    build:
+      commands:
+        
+        - amplifyPush --simple
 frontend:
   phases:
     build:
@@ -21,9 +27,8 @@ test:
   phases:
     preTest:
       commands:
-        - npm install
         - npm install mocha mochawesome mochawesome-merge mochawesome-report-generator
-        - npm run pretest
+        - npm run cy:verify
        
     test:
       commands:

@@ -1,10 +1,12 @@
 {
   "projectId": "x1mx3p",
   "repository": "https://github.com/Satishchilkaka/cypressAWSDashboard.git",
+  "description": "E2E with amplify console",
   "author":"Satish Chilkaka",
   "scripts": {
-    "build": "yarn add cypress",
-    "pretest": "yarn install",
+   
+    "build": "yarn install",
+    "cy:verify": "cypress verify",
     "test": "yarn cypress run --spec 'cypress/integration/examples/actions.spec.js'"
   },
   "dependencies": {
