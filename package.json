@@ -1,6 +1,10 @@
 {
 
   "scripts": {
+    "build": "npm run lint && npm run types",
+    "pretest": "npm run lint && npm run types",
+    "lint": "eslint --fix cypress app/assets/js/scripts.js",
+    "lint:yaml": "yamllint '*.yml' 'basic/*.yml' .buildkite/pipeline.yml .semaphore/semaphore.yml '.github/workflows/*.yml'",
     "test": "yarn cypress run"
   },
   "dependencies": {
