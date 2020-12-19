@@ -21,12 +21,8 @@ test:
   phases:
     preTest:
       commands:
-        - npm install mocha mochawesome mochawesome-merge mochawesome-report-generator
         - npm run cy:verify
        
     test:
       commands:
-        - npm test --record --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"
-    postTest:
-      commands:
-        - npx mochawesome-merge@4 cypress/report/mochawesome-report/*.json > cypress/report/mochawesome.json
+        - npm test --record
