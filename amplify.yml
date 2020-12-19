@@ -24,7 +24,7 @@ test:
         - npm install
         - npm install wait-on
         - npm install mocha mochawesome mochawesome-merge mochawesome-report-generator
-        - npm pretest
+        - npm run pretest
        
     test:
       commands:
