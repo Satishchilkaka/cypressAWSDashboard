@@ -5,7 +5,7 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: ./frontend/build
+    baseDirectory: crpress
     files:
       - "**/*"
   cache:

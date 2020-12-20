@@ -2,12 +2,15 @@
 
 context('Actions', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/commands/actions')
+    cy.visit('https://staging.autoserve1.com')
   })
 
   // https://on.cypress.io/interacting-with-elements
+  it('visit', () => {
+    cy.visit('')
+  })
 
-  it('.type() - type into a DOM element', () => {
+/*   it('.type() - type into a DOM element', () => {
     // https://on.cypress.io/type
     cy.get('.action-email')
       .type('fake@email.com').should('have.value', 'fake@email.com')
@@ -295,5 +298,5 @@ context('Actions', () => {
 
     // control the duration of the scroll (in ms)
     cy.get('#scrollable-both').scrollTo('center', { duration: 2000 })
-  })
+  }) */
 })
